@@ -4,10 +4,9 @@
 
 /**
  *  * main - A program that prints all possible different 
- *  combinations of three digits.
- *   *
+ *   * combinations of three digits.
+ *    *
  *     * Return: Always 0.
- *      
  */
 int main(void)
 {
@@ -41,7 +40,6 @@ int main(void)
 		else if ((digit2 < 56) && (digit3 == 57))
 		{
 			digit3 = 1 + ++digit2;
-																	
 		}
 		else
 		{

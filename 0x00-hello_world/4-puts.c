@@ -2,8 +2,9 @@
 
 /*
  * *
- *  * main - Entry point
- *   *
+ *  * main - Write a C program that prints special characters.
+ *  * 
+ * *
  *    * Return: Always 0 (Success)
  *  
  */

@@ -2,13 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**
  *  * main - A program that prints all possible different combinations of three digits.
  *   *        
  *    *
  *     * Return: Always 0.
- *      */
+ *      
+ */
 int main(void)
 {
 	int digit1;

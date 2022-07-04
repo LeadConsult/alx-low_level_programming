@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *  * main - A program that prints all possible different 
+ *  * main - A program that prints all possible different
  *   * combinations of three digits.
  *    *
  *     * Return: Always 0.

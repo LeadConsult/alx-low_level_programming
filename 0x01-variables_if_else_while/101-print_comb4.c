@@ -41,7 +41,8 @@ int main(void)
 		else if ((digit2 < 56) && (digit3 == 57))
 		{
 			digit3 = 1 + ++digit2;
-																	}
+																	
+		}
 		else
 		{
 			digit2 = 1 + ++digit1;

@@ -22,9 +22,3 @@ int main(void)
 	printf("%i\n", sum);
 	return (0);
 }
-}
-putchar('\n');
-
-return (0);
-}
-

@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * * puts2 -  function that prints every other character of a string,
- *   starting with the first character, followed by a new line.
+ * * puts2 -  function that prints every other character of a string, starting
+ *   with the first character, followed by a new line.
  * * @str: input string.
  * * Return: void
 */
@@ -21,9 +21,4 @@ void puts2(char *str)
 			_putchar(str[count]);
 		count++;
 	}
-}
-*(s + i) = *(str + j);
-j++;
-i--;
-}
 }

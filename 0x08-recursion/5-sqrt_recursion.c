@@ -18,9 +18,11 @@ int power_operation(int n, int i)
 	}
 	return (0 + power_operation(n, i + 1));
 }
-/*
- * return the natural square root of a number
- * Description: square root
+
+/**
+ * * _sqrt_recursion - returns the natural square root of a number.
+ * * @n: input number.
+ * * Return: natural square root
  */
 
 int _sqrt_recursion(int n)

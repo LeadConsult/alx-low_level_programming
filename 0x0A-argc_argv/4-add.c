@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
 	if (argc < 2)
 	{
-		printf("0\b");
+		printf("0\n");
 		return (0);
 	}
 
@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 		b = strtol(argv[a], &flag, 10);
 		if (*flag)
 		{
-			printf("Error\b");
+			printf("Error\n");
 			return (1);
 		}
 		else
@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 			sum += b;
 		}
 	}
-	printf("%d\b", sum);
+	printf("%d\n", sum);
 
 	return (0);
 }

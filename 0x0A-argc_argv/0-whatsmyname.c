@@ -2,7 +2,7 @@
 /**
  * * main - function that prints its name, followed by a new line.
  * * @argc: The number of command line arguments, The size of the argv array
- * * @argv: array containing the program command line arguments,array of size argc
+ * * @argv: array containing the program command line arguments,
  * * Return: 0 - success.
  */
 

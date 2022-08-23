@@ -1,6 +1,6 @@
 #include "main.h"
 
-void check_open_close(int stat, int fd, char *filename, char mode);
+void check_IO_stat(int stat, int fd, char *filename, char mode);
 /**
  * * main - copies the content of one file to another
  * * @argc: arguments count
@@ -21,27 +21,27 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	src = open(argv[1], O_RDONLY);
-	check_open_close(src, -1, argv[1], 'O');
+	check_IO_stat(src, -1, argv[1], 'O');
 	dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, mode);
-	check_open_close(dest, -1, argv[2], 'W');
+	check_IO_stat(dest, -1, argv[2], 'W');
 	while (n_read == 1024)
 	{
 		n_read = read(src, buffer, sizeof(buffer));
 		if (n_read == -1)
-			check_open_close(-1, -1, argv[1], 'O');
+			check_IO_stat(-1, -1, argv[1], 'O');
 		wrote = write(dest, buffer, n_read);
 		if (wrote == -1)
-			check_open_close(-1, -1, argv[2], 'W');
+			check_IO_stat(-1, -1, argv[2], 'W');
 	}
 	close_src = close(src);
-	check_open_close(close_src, src, NULL, 'C');
+	check_IO_stat(close_src, src, NULL, 'C');
 	close_dest = close(dest);
-	check_open_close(close_dest, dest, NULL, 'C');
+	check_IO_stat(close_dest, dest, NULL, 'C');
 	return (0);
 }
 
 /**
- * * check_open_close - checks if a file can be opened or closed
+ * * check_IO_stat - checks if a file can be opened or closed
  * * @stat: file descriptor of file to be opened
  * * @filename: name of file
  * * @mode: closing or opening
@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
  * * Return: void
  */
 
-void check_open_close(int stat, int fd, char *filename, char mode)
+void check_IO_stat(int stat, int fd, char *filename, char mode)
 {
 	if (mode == 'C' && stat == -1)
 	{
